@@ -2,6 +2,7 @@ package com.premp.coderswag.controller
 
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.Toast
 import com.premp.coderswag.R
 import com.premp.coderswag.adapters.CategoryAdapter
 import com.premp.coderswag.services.DataService
@@ -17,5 +18,6 @@ class MainActivity : AppCompatActivity() {
 
         adapter = CategoryAdapter(this, DataService.categories)
         categoryListView.adapter = adapter
+        
     }
 }
